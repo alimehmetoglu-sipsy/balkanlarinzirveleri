@@ -2,18 +2,20 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { 
-  Image, 
-  FileText, 
-  Users, 
+import {
+  Image,
+  FileText,
+  Users,
   Clock,
   ArrowRight,
   Edit,
   Eye,
   TrendingUp,
-  AlertCircle
+  AlertCircle,
+  Instagram
 } from 'lucide-react';
 import Link from 'next/link';
+import BalkanlarLogo from '../../components/BalkanlarLogo';
 
 export default function AdminDashboard() {
   const router = useRouter();
@@ -43,6 +45,13 @@ export default function AdminDashboard() {
   }, []);
 
   const quickActions = [
+    {
+      title: 'Instagram Yönetimi',
+      description: 'AI gönderi oluştur, yorumları onayla, zamanla',
+      icon: Instagram,
+      href: '/admin/instagram',
+      color: 'bg-pink-500'
+    },
     {
       title: 'Galeri Yönetimi',
       description: 'Fotoğrafları ekle, düzenle veya sil',
@@ -77,12 +86,19 @@ export default function AdminDashboard() {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900">
-          Hoş Geldin, {username || 'Admin'}! 👋
-        </h1>
-        <p className="text-gray-600 mt-2">
-          Sitenizi buradan kolayca yönetebilirsiniz. Aşağıdaki hızlı erişim butonlarını kullanarak içerikleri güncelleyebilirsiniz.
-        </p>
+        <div className="flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900">
+              Hoş Geldin, {username || 'Admin'}! 👋
+            </h1>
+            <p className="text-gray-600 mt-2">
+              Sitenizi buradan kolayca yönetebilirsiniz. Aşağıdaki hızlı erişim butonlarını kullanarak içerikleri güncelleyebilirsiniz.
+            </p>
+          </div>
+          <div className="hidden lg:block">
+            <BalkanlarLogo width={180} height={90} />
+          </div>
+        </div>
       </div>
       
       {/* İstatistikler */}
@@ -142,7 +158,7 @@ export default function AdminDashboard() {
           <TrendingUp className="w-5 h-5 mr-2" />
           Hızlı Erişim
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {quickActions.map((action, index) => {
             const Icon = action.icon;
             const Component = action.external ? 'a' : Link;

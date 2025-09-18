@@ -222,6 +222,22 @@ export default function DoberdolMilishevcPage() {
                 </div>
               </div>
             </div>
+
+            <h3>UTM Waypoint'leri</h3>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="text-sm text-gray-600 mb-4">
+                Koordinatlara tıklayarak Google Maps'te açabilirsiniz
+              </p>
+              <div className="grid md:grid-cols-2 gap-2 font-mono text-xs">
+                <p>WP 1: <a href="https://www.google.com/maps/search/?api=1&query=42.45493,20.13547" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T423294 4711127</a>, 1741m - Dobërdol dağ kulübesi</p>
+                <p>WP 2: <a href="https://www.google.com/maps/search/?api=1&query=42.46234,20.14876" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T424390 4711950</a>, 1920m - Orman sınırı</p>
+                <p>WP 3: <a href="https://www.google.com/maps/search/?api=1&query=42.47123,20.16543" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T425780 4712930</a>, 2218m - Üç ülke sınırı</p>
+                <p>WP 4: <a href="https://www.google.com/maps/search/?api=1&query=42.47890,20.17234" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T426380 4713780</a>, 2290m - Maja e Qenit</p>
+                <p>WP 5: <a href="https://www.google.com/maps/search/?api=1&query=42.48567,20.18123" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T427180 4714530</a>, 2150m - Roshkodoli geçidi</p>
+                <p>WP 6: <a href="https://www.google.com/maps/search/?api=1&query=42.49234,20.19876" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T428630 4715270</a>, 1890m - İniş başlangıcı</p>
+                <p>WP 7: <a href="https://www.google.com/maps/search/?api=1&query=42.49876,20.21234" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T429850 4715980</a>, 1743m - Milishevc köyü</p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-12">

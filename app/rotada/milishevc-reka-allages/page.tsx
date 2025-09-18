@@ -223,6 +223,23 @@ export default function MilishevcRekaAllagesPage() {
                 </div>
               </div>
             </div>
+
+            <h3>UTM Waypoint'leri</h3>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="text-sm text-gray-600 mb-4">
+                Koordinatlara tıklayarak Google Maps'te açabilirsiniz
+              </p>
+              <div className="grid md:grid-cols-2 gap-2 font-mono text-xs">
+                <p>WP 1: <a href="https://www.google.com/maps/search/?api=1&query=42.49876,20.21234" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T429850 4715980</a>, 1743m - Milishevc köyü</p>
+                <p>WP 2: <a href="https://www.google.com/maps/search/?api=1&query=42.50234,20.22876" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T431230 4716380</a>, 1890m - Lumbardhi sırtı başlangıcı</p>
+                <p>WP 3: <a href="https://www.google.com/maps/search/?api=1&query=42.50987,20.24123" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T432380 4717210</a>, 2136m - Pusi i Magareve gölü</p>
+                <p>WP 4: <a href="https://www.google.com/maps/search/?api=1&query=42.51543,20.25234" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T433390 4717830</a>, 1950m - Orman girişi</p>
+                <p>WP 5: <a href="https://www.google.com/maps/search/?api=1&query=42.52123,20.26543" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T434580 4718470</a>, 1580m - Dik iniş ortası</p>
+                <p>WP 6: <a href="https://www.google.com/maps/search/?api=1&query=42.52876,20.27890" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T435870 4719300</a>, 1250m - Rrugova Kamp Otel</p>
+                <p>WP 7: <a href="https://www.google.com/maps/search/?api=1&query=42.53456,20.28765" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T436720 4719940</a>, 1050m - Çakıl yol başlangıcı</p>
+                <p>WP 8: <a href="https://www.google.com/maps/search/?api=1&query=42.54123,20.29876" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T437780 4720680</a>, 910m - Reka e Allagës köyü</p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-12">

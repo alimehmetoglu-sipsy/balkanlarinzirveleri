@@ -53,10 +53,10 @@ export default function ThethValbonePage() {
 
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div 
+          <div
             className="relative w-full h-96 rounded-2xl overflow-hidden mb-8"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+              backgroundImage: `url('/images/rotada/theth-main.png')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

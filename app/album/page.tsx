@@ -43,6 +43,42 @@ export default function AlbumPage() {
 
   // Real Albania gallery images from peaksofthebalkans.com - with correct thumbnail/full-size mappings
   const albaniaPhotos = [
+    // Local Theth images
+    {
+      src: '/images/rotada/theth-main.png',
+      thumbnail: '/images/rotada/theth-main.png',
+      title: 'Theth Vadisi Genel Görünüm',
+      location: 'Arnavutluk',
+      category: 'albania'
+    },
+    {
+      src: '/images/rotada/theth1.png',
+      thumbnail: '/images/rotada/theth1.png',
+      title: 'Theth Köyü',
+      location: 'Arnavutluk',
+      category: 'albania'
+    },
+    {
+      src: '/images/rotada/theth-vadisi.webp',
+      thumbnail: '/images/rotada/theth-vadisi.webp',
+      title: 'Theth Vadisi Manzarası',
+      location: 'Arnavutluk',
+      category: 'albania'
+    },
+    {
+      src: '/images/rotada/theth-vusanje.webp',
+      thumbnail: '/images/rotada/theth-vusanje.webp',
+      title: 'Theth-Vusanje Rotası',
+      location: 'Arnavutluk',
+      category: 'albania'
+    },
+    {
+      src: '/images/rotada/theth-vusanje2.webp',
+      thumbnail: '/images/rotada/theth-vusanje2.webp',
+      title: 'Theth-Vusanje Patikası',
+      location: 'Arnavutluk',
+      category: 'albania'
+    },
     { 
       src: 'https://peaksofthebalkans.com/gallery_gen/1f2fe7149a06ffa71e2fb58393896b08.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/1f2fe7149a06ffa71e2fb58393896b08_290x193.jpg',
@@ -220,6 +256,63 @@ export default function AlbumPage() {
 
   // High-quality images for Montenegro
   const montenegroPhotos = [
+    // Local Montenegro images
+    {
+      src: '/images/rotada/vusanje-zogs.webp',
+      thumbnail: '/images/rotada/vusanje-zogs.webp',
+      title: 'Vusanje - Zogs Köyü',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
+    {
+      src: '/images/rotada/grlase-lake-vusanje.webp',
+      thumbnail: '/images/rotada/grlase-lake-vusanje.webp',
+      title: 'Grlase Gölü',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
+    {
+      src: '/images/rotada/oko-skakavice-vusanje.webp',
+      thumbnail: '/images/rotada/oko-skakavice-vusanje.webp',
+      title: 'Oko Skakavice (Çekirge Gözü)',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
+    {
+      src: '/images/rotada/grebaje.webp',
+      thumbnail: '/images/rotada/grebaje.webp',
+      title: 'Grebaje Vadisi',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
+    {
+      src: '/images/rotada/grebaje-cow.webp',
+      thumbnail: '/images/rotada/grebaje-cow.webp',
+      title: 'Grebaje Yaylası',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
+    {
+      src: '/images/rotada/talijanka-main.jpg',
+      thumbnail: '/images/rotada/talijanka-main.jpg',
+      title: 'Talijanka Dağı',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
+    {
+      src: '/images/rotada/talijanka.webp',
+      thumbnail: '/images/rotada/talijanka.webp',
+      title: 'Talijanka Geçidi',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
+    {
+      src: '/images/rotada/popodija-talijanka.webp',
+      thumbnail: '/images/rotada/popodija-talijanka.webp',
+      title: 'Popodija-Talijanka Rotası',
+      location: 'Karadağ',
+      category: 'montenegro'
+    },
     { 
       src: 'https://images.unsplash.com/photo-1565009848962-d4d63e37b890?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80', 
       title: 'Plav Gölü', 
@@ -250,7 +343,25 @@ export default function AlbumPage() {
     }
   ];
 
-  const allPhotos = [...albaniaPhotos, ...kosovoPhotos, ...montenegroPhotos];
+  // Diğer genel resimler
+  const otherPhotos = [
+    {
+      src: '/images/album/official-trail-map.webp',
+      thumbnail: '/images/album/official-trail-map.webp',
+      title: 'Resmi Rota Haritası',
+      location: 'Balkanların Zirveleri',
+      category: 'others'
+    },
+    {
+      src: '/images/album/img4408.webp',
+      thumbnail: '/images/album/img4408.webp',
+      title: 'Dağ Manzarası',
+      location: 'Balkanların Zirveleri',
+      category: 'others'
+    }
+  ];
+
+  const allPhotos = [...albaniaPhotos, ...kosovoPhotos, ...montenegroPhotos, ...otherPhotos];
   
   const filteredPhotos = selectedCategory === 'all' 
     ? allPhotos 

@@ -12,7 +12,7 @@ export default function RekaAllagesKucishtePage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <Link href="/rotada" className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-6">
             <ArrowLeft className="w-5 h-5" />
-            Rotaya Geri D�n
+            Rotaya Geri Dön
           </Link>
 
           <div className="flex items-center gap-3 mb-4">
@@ -23,7 +23,7 @@ export default function RekaAllagesKucishtePage() {
           </div>
 
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-            Reka e Allag�s - Ku�ishte
+            Reka e Allagës - Kuçishte
           </h1>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -35,17 +35,17 @@ export default function RekaAllagesKucishtePage() {
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <Clock className="w-6 h-6 text-primary-600 mx-auto mb-2" />
               <div className="text-lg font-bold">8-9 saat</div>
-              <div className="text-sm text-gray-600">S�re</div>
+              <div className="text-sm text-gray-600">Süre</div>
             </div>
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <TrendingUp className="w-6 h-6 text-primary-600 mx-auto mb-2" />
               <div className="text-lg font-bold">1257m</div>
-              <div className="text-sm text-gray-600">T1rman1_</div>
+              <div className="text-sm text-gray-600">Tırmanış</div>
             </div>
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <TrendingUp className="w-6 h-6 text-orange-600 mx-auto mb-2 rotate-180" />
               <div className="text-lg font-bold">1139m</div>
-              <div className="text-sm text-gray-600">0ni_</div>
+              <div className="text-sm text-gray-600">İniş</div>
             </div>
           </div>
         </div>
@@ -65,18 +65,18 @@ export default function RekaAllagesKucishtePage() {
           </div>
 
           <div className="bg-blue-50 rounded-xl p-6 mb-8">
-            <h2 className="font-display text-xl font-bold mb-4">H1zl1 Bilgiler</h2>
+            <h2 className="font-display text-xl font-bold mb-4">Hızlı Bilgiler</h2>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
-              <div><strong>Minimum Y�kseklik:</strong> 1.072 metre</div>
-              <div><strong>Maksimum Y�kseklik:</strong> 1.820 metre</div>
+              <div><strong>Minimum Yükseklik:</strong> 1.072 metre</div>
+              <div><strong>Maksimum Yükseklik:</strong> 1.820 metre</div>
               <div><strong>Zorluk Seviyesi:</strong> Orta</div>
-              <div><strong>0_aretleme:</strong> K1rm1z1/Beyaz/K1rm1z1</div>
+              <div><strong>İşaretleme:</strong> Kırmızı/Beyaz/Kırmızı</div>
             </div>
           </div>
 
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
-              <h2 className="font-display text-3xl font-bold mb-6 text-gray-900">Rota A�1klamas1</h2>
+              <h2 className="font-display text-3xl font-bold mb-6 text-gray-900">Rota Açıklaması</h2>
 
               <div className="space-y-6">
                 <div className="bg-white rounded-xl p-6 border border-green-100">
@@ -85,11 +85,11 @@ export default function RekaAllagesKucishtePage() {
                       <span className="text-white font-bold text-sm">1</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Genel G�zergah</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Genel Güzergah</h3>
                       <p className="text-gray-700 leading-relaxed">
-                        Bu g�zergah <strong>Mustaf Nikqi'nin pansiyonundan</strong> ba_layarak
-                        �ay1rlar ve �am ormanlar1 boyunca kuzeybat1ya doru y�kselir.
-                        Pepaj, Drelaj ve Dugaiv� k�ylerinden ge�erek <strong>Ku�ishte k�y�ne</strong> ula_1r.
+                        Bu güzergah <strong>Mustaf Nikqi'nin pansiyonundan</strong> başlayarak
+                        çayırlar ve çam ormanları boyunca kuzeybatıya doğru yükselir.
+                        Pepaj, Drelaj ve Dugaivë köylerinden geçerek <strong>Kuçishte köyüne</strong> ulaşır.
                       </p>
                     </div>
                   </div>
@@ -101,17 +101,75 @@ export default function RekaAllagesKucishtePage() {
                       <span className="text-white font-bold text-sm">2</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Konaklama Se�enekleri</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Konaklama Seçenekleri</h3>
                       <p className="text-gray-700 leading-relaxed mb-3">
-                        Drelaj k�y�nde Osman Shala'n1n ailesi yan1nda konaklama imkan1 bulunur.
-                        Y�r�y�_� iki g�ne b�lmek i�in �nerilen durak noktas1d1r.
+                        Drelaj köyünde Osman Shala'nın ailesi yanında konaklama imkanı bulunur.
+                        Yürüyüşü iki güne bölmek için önerilen durak noktasıdır.
                       </p>
                       <div className="bg-blue-50 rounded-lg p-3">
                         <p className="text-blue-800 text-sm">
-                          <strong>0leti_im:</strong> +37744586740
+                          <strong>İletişim:</strong> +37744586740
                         </p>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <h3 className="font-display text-2xl font-bold mb-6 text-gray-900">Detaylı Güzergah</h3>
+
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">A</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Başlangıç - Mustaf Nikqi Pansiyonu</h4>
+                    <p className="text-gray-700">
+                      Reka e Allagës'teki pansiyondan başlayarak kuzeybatıya doğru
+                      çayırlar ve çam ormanları arasından yükseliş başlar.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">B</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Pepaj Köyü</h4>
+                    <p className="text-gray-700">
+                      İlk köy olan Pepaj'dan geçerek toprak ve çakıl yollarda
+                      yürüyüş devam eder. Köy mimarisi görülmeye değer.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">C</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Drelaj Köyü</h4>
+                    <p className="text-gray-700">
+                      Drelaj köyünde Osman Shala'nın evinde konaklama ve yemek
+                      imkanı. İki güne bölmek isteyenler için ideal durak.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">D</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Kuçishte Köyü</h4>
+                    <p className="text-gray-700">
+                      Dugaivë'den sonra Kuçishte köyüne varılır. Köydeki
+                      Katolik Kilisesi ziyaret edilebilir.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -124,16 +182,16 @@ export default function RekaAllagesKucishtePage() {
                   <h3 className="font-display text-xl font-bold mb-3 text-orange-900">Zorluk Seviyesi</h3>
                   <p className="text-orange-800 mb-4">
                     Bu etap <strong>orta</strong> zorluk seviyesindedir. Uzun mesafe nedeniyle
-                    iki g�ne b�l�nmesi �nerilir.
+                    iki güne bölünmesi önerilir.
                   </p>
 
                   <div className="bg-white rounded-lg p-4">
                     <h4 className="font-semibold text-orange-900 mb-2">Dikkat Edilecek Hususlar:</h4>
                     <ul className="space-y-1 text-sm text-orange-800">
-                      <li>" �ounlukla toprak ve �ak1l yollar</li>
-                      <li>" K�yler aras1 ilgin� g�zergah</li>
-                      <li>" 0ki su kayna1 mevcut</li>
-                      <li>" Ku�ishte'de Katolik Kilisesi ziyaret edilebilir</li>
+                      <li>• Çoğunlukla toprak ve çakıl yollar</li>
+                      <li>• Köyler arası ilginç güzergah</li>
+                      <li>• İki su kaynağı mevcut</li>
+                      <li>• Kuçishte'de Katolik Kilisesi ziyaret edilebilir</li>
                     </ul>
                   </div>
                 </div>
@@ -143,11 +201,26 @@ export default function RekaAllagesKucishtePage() {
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
               <h3 className="text-blue-900 mt-0">Pratik Bilgiler</h3>
               <ul className="text-blue-800 mb-0">
-                <li>En iyi ziyaret zaman1: Haziran - Eyl�l</li>
-                <li>Su kayna1: Rota boyunca iki kaynak</li>
+                <li>En iyi ziyaret zamanı: Haziran - Eylül</li>
+                <li>Su kaynağı: Rota boyunca iki kaynak</li>
                 <li>Konaklama: Drelaj'da aile pansiyonu</li>
-                <li>Alternatif: K�pr�den Ku�ishte'ye taksi</li>
+                <li>Alternatif: Köprüden Kuçishte'ye taksi</li>
               </ul>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 my-8">
+              <div className="flex items-start gap-3">
+                <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-amber-900 mt-0">Uyarılar ve Tavsiyeler</h3>
+                  <ul className="text-amber-800 mb-0">
+                    <li>Uzun mesafe - iki güne bölmeyi düşünün</li>
+                    <li>Drelaj'da konaklama rezervasyonu yapın</li>
+                    <li>Köy yolları karmaşık olabilir - GPS kullanın</li>
+                    <li>Yerel kültürü deneyimlemek için zaman ayırın</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -156,13 +229,13 @@ export default function RekaAllagesKucishtePage() {
               href="/rotada/milishevc-reka-allages"
               className="btn-secondary text-center"
             >
-              �nceki: Milishevc - Reka e Allag�s
+              Önceki: Milishevc - Reka e Allagës
             </Link>
             <Link
               href="/rotada/kucishte-babino-polje"
               className="btn-primary text-center"
             >
-              Sonraki: Ku�ishte - Babino Polje
+              Sonraki: Kuçishte - Babino Polje
             </Link>
           </div>
         </div>

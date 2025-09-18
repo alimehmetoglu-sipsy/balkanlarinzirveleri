@@ -12,18 +12,18 @@ export default function KucishteBabinoPolje() {
         <div className="container mx-auto px-4 max-w-4xl">
           <Link href="/rotada" className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-6">
             <ArrowLeft className="w-5 h-5" />
-            Rotaya Geri D�n
+            Rotaya Geri Dön
           </Link>
 
           <div className="flex items-center gap-3 mb-4">
             <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
               Etap 7
             </span>
-            <span className="text-gray-600">Kosova - Karada</span>
+            <span className="text-gray-600">Kosova - Karadağ</span>
           </div>
 
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-            Ku�ishte - Babino Polje
+            Kuçishte - Babino Polje
           </h1>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -35,17 +35,17 @@ export default function KucishteBabinoPolje() {
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <Clock className="w-6 h-6 text-primary-600 mx-auto mb-2" />
               <div className="text-lg font-bold">7-8 saat</div>
-              <div className="text-sm text-gray-600">S�re</div>
+              <div className="text-sm text-gray-600">Süre</div>
             </div>
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <TrendingUp className="w-6 h-6 text-primary-600 mx-auto mb-2" />
               <div className="text-lg font-bold">1151m</div>
-              <div className="text-sm text-gray-600">T1rman1_</div>
+              <div className="text-sm text-gray-600">Tırmanış</div>
             </div>
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <TrendingUp className="w-6 h-6 text-orange-600 mx-auto mb-2 rotate-180" />
               <div className="text-lg font-bold">1109m</div>
-              <div className="text-sm text-gray-600">0ni_</div>
+              <div className="text-sm text-gray-600">İniş</div>
             </div>
           </div>
         </div>
@@ -65,18 +65,18 @@ export default function KucishteBabinoPolje() {
           </div>
 
           <div className="bg-blue-50 rounded-xl p-6 mb-8">
-            <h2 className="font-display text-xl font-bold mb-4">H1zl1 Bilgiler</h2>
+            <h2 className="font-display text-xl font-bold mb-4">Hızlı Bilgiler</h2>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
-              <div><strong>Minimum Y�kseklik:</strong> 1.438 metre</div>
-              <div><strong>Maksimum Y�kseklik:</strong> 2.276 metre</div>
+              <div><strong>Minimum Yükseklik:</strong> 1.438 metre</div>
+              <div><strong>Maksimum Yükseklik:</strong> 2.276 metre</div>
               <div><strong>Zorluk Seviyesi:</strong> Orta</div>
-              <div><strong>0_aretleme:</strong> K1rm1z1 daire/Beyaz dolgu</div>
+              <div><strong>İşaretleme:</strong> Kırmızı daire/Beyaz dolgu</div>
             </div>
           </div>
 
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
-              <h2 className="font-display text-3xl font-bold mb-6 text-gray-900">Rota A�1klamas1</h2>
+              <h2 className="font-display text-3xl font-bold mb-6 text-gray-900">Rota Açıklaması</h2>
 
               <div className="space-y-6">
                 <div className="bg-white rounded-xl p-6 border border-green-100">
@@ -85,12 +85,12 @@ export default function KucishteBabinoPolje() {
                       <span className="text-white font-bold text-sm">1</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Buzul G�lleri</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Buzul Gölleri</h3>
                       <p className="text-gray-700 leading-relaxed">
-                        Bu g�zergah <strong>Guri i Kuq Kompleksinden</strong> ba_lar ve
-                        iki muhte_em buzul g�l�n� ge�er: <strong>Liqeni i Ku�isht�s</strong> ve
-                        <strong>Liqeni i Drelajve</strong>. Lugu i Shkodr�s, Jelenka ve Ravno Brdo
-                        ge�itlerinden ge�erek Karada'daki Babino Polje k�y�ne ula_1r.
+                        Bu güzergah <strong>Guri i Kuq Kompleksinden</strong> başlar ve
+                        iki muhteşem buzul gölünü geçer: <strong>Liqeni i Kuçishtës</strong> ve
+                        <strong>Liqeni i Drelajve</strong>. Lugu i Shkodrës, Jelenka ve Ravno Brdo
+                        geçitlerinden geçerek Karadağ'daki Babino Polje köyüne ulaşır.
                       </p>
                     </div>
                   </div>
@@ -102,14 +102,14 @@ export default function KucishteBabinoPolje() {
                       <span className="text-white font-bold text-sm">2</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Kamp 0mkanlar1</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Kamp İmkanları</h3>
                       <p className="text-gray-700 leading-relaxed mb-3">
-                        Lugu i Shkodres ge�idinde veya Jelenka ile Ravno Brdo aras1nda kamp kurulabilir.
-                        Babino Polje'de Armend Alija'n1n evinde konaklama m�mk�n.
+                        Lugu i Shkodres geçidinde veya Jelenka ile Ravno Brdo arasında kamp kurulabilir.
+                        Babino Polje'de Armend Alija'nın evinde konaklama mümkün.
                       </p>
                       <div className="bg-blue-50 rounded-lg p-3">
                         <p className="text-blue-800 text-sm">
-                          <strong>Not:</strong> Karada'da organize kamplar d1_1nda kamp yapmak yasak
+                          <strong>Not:</strong> Karadağ'da organize kamplar dışında kamp yapmak yasak
                         </p>
                       </div>
                     </div>
@@ -125,16 +125,16 @@ export default function KucishteBabinoPolje() {
                   <h3 className="font-display text-xl font-bold mb-3 text-orange-900">Zorluk Seviyesi</h3>
                   <p className="text-orange-800 mb-4">
                     Bu etap <strong>orta</strong> zorluk seviyesindedir. Guri i Kuq ile Babino Polje
-                    aras1nda k�y veya konaklama yeri bulunmaz.
+                    arasında köy veya konaklama yeri bulunmaz.
                   </p>
 
                   <div className="bg-white rounded-lg p-4">
                     <h4 className="font-semibold text-orange-900 mb-2">Dikkat Edilecek Hususlar:</h4>
                     <ul className="space-y-1 text-sm text-orange-800">
-                      <li>" 0ki buzul g�l� manzaras1</li>
-                      <li>" �� ge�it a_1l1r</li>
-                      <li>" GPS veya yerel rehber �nerilir</li>
-                      <li>" 0ki g�ne b�lme imkan1 var</li>
+                      <li>• İki buzul gölü manzarası</li>
+                      <li>• Üç geçit aşılır</li>
+                      <li>• GPS veya yerel rehber önerilir</li>
+                      <li>• İki güne bölme imkanı var</li>
                     </ul>
                   </div>
                 </div>
@@ -144,10 +144,10 @@ export default function KucishteBabinoPolje() {
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
               <h3 className="text-blue-900 mt-0">Pratik Bilgiler</h3>
               <ul className="text-blue-800 mb-0">
-                <li>En iyi ziyaret zaman1: Haziran - Eyl�l</li>
-                <li>Su kayna1: Birka� noktada mevcut</li>
+                <li>En iyi ziyaret zamanı: Haziran - Eylül</li>
+                <li>Su kaynağı: Birkaç noktada mevcut</li>
                 <li>Konaklama: Babino Polje'de aile pansiyonu</li>
-                <li>Kamp: Belirtilen noktalarda m�mk�n</li>
+                <li>Kamp: Belirtilen noktalarda mümkün</li>
               </ul>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function KucishteBabinoPolje() {
               href="/rotada/reka-allages-kucishte"
               className="btn-secondary text-center"
             >
-              �nceki: Reka e Allag�s - Ku�ishte
+              Önceki: Reka e Allagës - Kuçishte
             </Link>
             <Link
               href="/rotada/babino-polje-plav"

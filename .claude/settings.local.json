@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/c/Users/Ali/Downloads/websiteimages/**)",
+      "Bash(mkdir:*)",
+      "WebFetch(domain:peaksofthebalkans.com)",
+      "Bash(touch:*)",
+      "Bash(for:*)",
+      "Bash(do echo \"Creating $file\")",
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote get-url:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

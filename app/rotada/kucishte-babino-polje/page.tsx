@@ -23,7 +23,7 @@ export default function KucishteBabinoPolje() {
           </div>
 
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-            Kuçishte - Babino Polje
+            Liqenat i Kuçishtës - Babino Polje
           </h1>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

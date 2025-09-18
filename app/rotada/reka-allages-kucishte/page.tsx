@@ -23,7 +23,7 @@ export default function RekaAllagesKucishtePage() {
           </div>
 
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-            Reka e Allagës - Kuçishte
+            Reka e Allagës - Liqenat i Kuçishtës
           </h1>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

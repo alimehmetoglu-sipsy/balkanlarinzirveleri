@@ -77,14 +77,31 @@ export default function HashtagMonitoring() {
       const hashtagsResponse = await fetch('/api/instagram/hashtags');
       if (hashtagsResponse.ok) {
         const hashtagsData = await hashtagsResponse.json();
-        setHashtags(hashtagsData);
+        // Map database fields to component interface
+        const mappedHashtags = hashtagsData.map((h: any) => ({
+          id: h.id.toString(),
+          hashtag: h.hashtag,
+          isActive: h.is_active,
+          addedDate: h.added_date,
+          lastChecked: h.last_checked || new Date().toISOString(),
+          postsFound: h.posts_found || 0,
+          commentsPosted: h.comments_posted || 0,
+          avgEngagement: h.avg_engagement || 0,
+          category: h.category || 'secondary',
+          language: h.language || 'tr',
+          priority: h.priority || 'medium'
+        }));
+        setHashtags(mappedHashtags);
       }
 
       // Load hashtag statistics
       const statsResponse = await fetch('/api/instagram/hashtag-stats');
       if (statsResponse.ok) {
         const statsData = await statsResponse.json();
-        setStats(statsData);
+        setStats({
+          ...statsData,
+          lastUpdate: new Date(statsData.lastUpdate).toLocaleString('tr-TR')
+        });
       }
 
       // Load recent activity
@@ -116,9 +133,25 @@ export default function HashtagMonitoring() {
 
       if (response.ok) {
         const newHashtagData = await response.json();
-        setHashtags(prev => [...prev, newHashtagData]);
+        // Map the response to match component interface
+        const mappedHashtag = {
+          id: newHashtagData.id.toString(),
+          hashtag: newHashtagData.hashtag,
+          isActive: newHashtagData.is_active,
+          addedDate: newHashtagData.added_date,
+          lastChecked: newHashtagData.last_checked || new Date().toISOString(),
+          postsFound: newHashtagData.posts_found || 0,
+          commentsPosted: newHashtagData.comments_posted || 0,
+          avgEngagement: newHashtagData.avg_engagement || 0,
+          category: newHashtagData.category || 'secondary',
+          language: newHashtagData.language || 'tr',
+          priority: newHashtagData.priority || 'medium'
+        };
+        setHashtags(prev => [...prev, mappedHashtag]);
         setNewHashtag('');
         setShowAddForm(false);
+        // Reload stats after adding
+        loadHashtagData();
       }
     } catch (error) {
       console.error('Hashtag eklenirken hata:', error);

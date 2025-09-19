@@ -1,39 +1,33 @@
-import BetterSqlite3 from 'better-sqlite3';
+import Database from 'better-sqlite3';
 import path from 'path';
 import fs from 'fs';
 
-// SQLite database wrapper
-export class Database {
-  private static instance: Database;
-  private db: BetterSqlite3.Database;
+export class SQLiteDatabase {
+  private static instance: SQLiteDatabase;
+  private db: Database.Database;
 
   private constructor() {
-    // Use SQLite for all environments
     const dbDir = path.join(process.cwd(), 'data');
     if (!fs.existsSync(dbDir)) {
       fs.mkdirSync(dbDir, { recursive: true });
     }
 
     const dbPath = path.join(dbDir, 'instagram.db');
-    this.db = new BetterSqlite3(dbPath);
+    this.db = new Database(dbPath);
 
     this.db.pragma('journal_mode = WAL');
     this.db.pragma('busy_timeout = 5000');
 
-    console.log('Using SQLite database at:', dbPath);
-
-    // Initialize schema immediately
     this.initializeSchema();
   }
 
-  public static getInstance(): Database {
-    if (!Database.instance) {
-      Database.instance = new Database();
+  public static getInstance(): SQLiteDatabase {
+    if (!SQLiteDatabase.instance) {
+      SQLiteDatabase.instance = new SQLiteDatabase();
     }
-    return Database.instance;
+    return SQLiteDatabase.instance;
   }
 
-  // Execute query
   async query<T = any>(sql: string, params?: any[]): Promise<T[]> {
     try {
       if (sql.trim().toUpperCase().startsWith('SELECT') ||
@@ -53,7 +47,6 @@ export class Database {
     }
   }
 
-  // Execute single query and return first result
   async queryFirst<T = any>(sql: string, params?: any[]): Promise<T | null> {
     try {
       const stmt = this.db.prepare(sql);
@@ -65,7 +58,6 @@ export class Database {
     }
   }
 
-  // Insert and return inserted ID
   async insert(sql: string, params?: any[]): Promise<string> {
     try {
       const stmt = this.db.prepare(sql);
@@ -77,7 +69,6 @@ export class Database {
     }
   }
 
-  // Update and return affected rows
   async update(sql: string, params?: any[]): Promise<number> {
     try {
       const stmt = this.db.prepare(sql);
@@ -89,13 +80,10 @@ export class Database {
     }
   }
 
-  // Delete and return affected rows
   async delete(sql: string, params?: any[]): Promise<number> {
     return this.update(sql, params);
   }
 
-
-  // Check if database connection is healthy
   async healthCheck(): Promise<boolean> {
     try {
       const result = this.db.prepare('SELECT 1 as health').get();
@@ -106,7 +94,6 @@ export class Database {
     }
   }
 
-  // Initialize database schema
   async initializeSchema(): Promise<void> {
     try {
       this.db.exec(`
@@ -169,16 +156,13 @@ export class Database {
     }
   }
 
-  // Close database connection
   async close(): Promise<void> {
     this.db.close();
   }
 }
 
-// Export singleton instance
-export const db = Database.getInstance();
+export const db = SQLiteDatabase.getInstance();
 
-// Export types for external use
 export interface InstagramPost {
   id: string;
   caption: string;

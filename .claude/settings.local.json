@@ -10,7 +10,14 @@
       "Bash(done)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git remote get-url:*)"
+      "Bash(git remote get-url:*)",
+      "Read(//home/ali/**)",
+      "Bash(find:*)",
+      "Bash(./scripts/claude-chat-logger.sh:*)",
+      "WebSearch",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(chmod:*)"
     ],
     "deny": [],
     "ask": []

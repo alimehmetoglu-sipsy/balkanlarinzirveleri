@@ -1,6 +1,8 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import IntroSection from '@/components/IntroSection';
+import SocialProofSection from '@/components/SocialProofSection';
+import UrgencySection from '@/components/UrgencySection';
 import AwardSection from '@/components/AwardSection';
 import CountriesSection from '@/components/CountriesSection';
 import TrailSection from '@/components/TrailSection';
@@ -23,12 +25,14 @@ async function getSiteData() {
 
 export default async function HomePage() {
   const siteData = await getSiteData();
-  
+
   return (
     <>
       <Navigation />
       <HeroSection data={siteData?.hero} />
       <IntroSection data={siteData?.introduction} />
+      <SocialProofSection />
+      <UrgencySection />
       <AwardSection />
       <CountriesSection />
       <TrailSection />
